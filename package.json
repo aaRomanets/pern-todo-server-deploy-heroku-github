@@ -1,0 +1,24 @@
+{
+  "name": "nicksblog",
+  "version": "1.0.0",
+  "description": "Quick start cli for single page React application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon -L index.js"
+  },
+  "keywords": [
+    "biz"
+  ],
+  "author": "Me",
+  "license": "MIT",
+  "bin": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.16.4",
+    "mongoose": "5.6.2",
+    "nodemon": "^2.0.20"
+  }
+}

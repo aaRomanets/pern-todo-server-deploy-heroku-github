@@ -44,16 +44,17 @@ app.post("/todos", async(req,res) =>
 {
     try 
     {
+        console.log(req.body.description);
+
         //производим указанное добавление
         const doc = new Todo({
             description: req.body.description
         })
         //фиксируем новое задание в базе данных
         const newTodo = await  doc.save();
-        res.json({
-           db: process.env.DATABASE_URL,
-           host: process.env.host,
-        });
+        console.log(newTodo);
+
+        res.json({});
     } 
     catch (err) 
     {
